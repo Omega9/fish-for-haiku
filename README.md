@@ -17,6 +17,7 @@
                        (JJJ| \UUU)
                         (UU)
 ```
+This is a lighter version of [my daily driver](https://github.com/Omega9/fish) for [Haiku](https://www.haiku-os.org).
 
 This configuration has [fisher](https://github.com/jorgebucaran/fisher) installed and several add-ons that can be updated with it:
 - [bobthefish](https://github.com/oh-my-fish/theme-bobthefish)
@@ -42,6 +43,7 @@ Quick reference:
 - `p-h` for `pkgman` commands
 
 ## Instructions
+0. Pull this repo to `/boot/home/config/settings/fish/`
 1. Modify `config.fish` and `functions_and_abbreviations.fish` to your likings
 2. Add anything to your PATH with `fish_add_path`
 3. `fisher update` to update functions
