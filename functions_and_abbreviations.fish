@@ -1,6 +1,14 @@
-### Functions
+#####################
+#####################
+##### Functions #####
+#####################
+#####################
 
-# Terminal Shortcuts
+############
+### Help ###
+############
+
+## Terminal Shortcuts
 # https://itsfoss.com/linux-terminal-shortcuts/
 function t-h --description 'Terminal Shortcuts'
     echo -n "Terminal Shortcuts
@@ -29,7 +37,7 @@ function t-h --description 'Terminal Shortcuts'
     "
 end
 
-# Pkgman help
+## Pkgman help
 function p-h --description 'Pkgman functions'
     echo -n "Pkgman functions
     ‣ p-fs       Full-sync
@@ -46,7 +54,10 @@ function p-h --description 'Pkgman functions'
     "
 end
 
-# Pkgman
+##########################
+### Package Management ###
+##########################
+
 function p-fs --wraps='pkgman full-sync' --description 'Synchronizes the installed packages with the repositories (even by downgrading) (pkgman full-sync)'
     pkgman full-sync;
 end
@@ -195,7 +206,10 @@ function untar --wraps='tar -zxvf ' --description 'Untar'
    tar -zxvf  $argv;
 end
 
-# NET
+###############
+### Network ###
+###############
+
 function myip --description 'What is my IP?'
     curl ifconfig.co
 end
@@ -256,12 +270,14 @@ function imc --description 'Convert anything with ImageMagick'
     convert $argv[1] $argv[1].$argv[2]
 end
 
-# The most needed function
+# RickRoll
 function rickroll --description 'the terminal rickroll'
     curl -s -L https://raw.githubusercontent.com/keroserene/rickrollrc/master/roll.sh | bash
 end
 
-### Abbreviations
+#####################
+### Abbreviations ###
+#####################
 
 # Yt-dlp extract
 abbr yta-aac 'yt-dlp --cookies-from-browser vivaldi --extract-audio --audio-format aac'
